@@ -1,0 +1,20 @@
+.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0071c2;
+    --link-hover-color: #005fa3;
+    --border-color: #e6e6e6;
+    --button-bg: #0071c2;
+    --button-text: #ffffff;
+}
+
+.dark-theme {
+    --bg-color: #2b2b2b;
+    --text-color: #f0f0f0;
+    --link-color: #4dafff;
+    --link-hover-color: #82caff;
+    --border-color: #444444;
+    --button-bg: #444444;
+    --button-text: #f0f0f0;
+}
+
