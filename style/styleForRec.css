@@ -34,7 +34,80 @@
     background-color: var(--link-hover-color);
 }
 
-/* ===== Раздел "Luxury Destinations" ===== */
+/* Hero-секция для Comfort Travel */
+.comfort-hero {
+    background: url('./style/image/comfort-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.comfort-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.comfort-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comfort-hero .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.comfort-hero .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Hero-секция для Budget Travel */
+.budget-hero {
+    background: url('./style/image/budget-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.budget-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.budget-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.budget-hero .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.budget-hero .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+
+/* ===== Раздел "Destinations" ===== */
 .destinations {
     padding: 4rem 1rem;
     background-color: var(--bg-color);
