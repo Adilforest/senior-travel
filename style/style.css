@@ -37,75 +37,89 @@ body.dark-theme {
     --button-text: #f0f0f0;
 }
 
-/* ===== Навигационный бар ===== */
+/* ===== Навбар ===== */
 .navbar {
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%; 
-    z-index: 1000; 
-    background-color: var(--bg-color);
-    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    justify-content: center; /* Центрируем всё содержимое */
+    align-items: center;
     padding: 1rem 2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 70px; /* Фиксируем высоту навбара */
 }
 
-.navbar .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--text-color);
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.navbar .logo:hover {
-    color: var(--link-hover-color);
-}
-
+/* Центрирование кнопок навигации */
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 1rem;
+    gap: 2rem; /* Расстояние между кнопками */
     margin: 0;
     padding: 0;
 }
 
+/* Стили кнопок навигации */
 .nav-item {
     text-decoration: none;
     font-size: 1rem;
-    color: var(--link-color);
+    color: var(--text-color);
+    position: relative;
     padding: 0.5rem 1rem;
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    transition: color 0.3s ease;
+}
+
+/* Анимация при наведении */
+.nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--button-bg);
+    transition: width 0.3s ease;
+}
+
+.nav-item:hover::after {
+    width: 100%;
 }
 
 .nav-item:hover {
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    color: var(--link-hover-color);
 }
 
+/* Активное состояние */
 .nav-item.active {
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    color: var(--button-bg);
 }
 
+/* Кнопка смены темы: фиксирована в правом верхнем углу */
 .theme-toggle {
+    position: fixed; /* Фиксируем кнопку */
+    top: 1rem;
+    right: 1rem; /* Всегда в правом верхнем углу */
     background: var(--button-bg);
     color: var(--button-text);
     border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1rem;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .theme-toggle:hover {
     background-color: var(--link-hover-color);
-    color: var(--button-text);
+    transform: scale(1.1);
 }
+
 
 /* ===== Адаптивная кнопка "гамбургер" ===== */
 .menu-toggle {
