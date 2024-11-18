@@ -1,13 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     // === FAQ Accordion Logic ===
-    document.querySelectorAll('.accordion-header').forEach(button => {
+    const headers = document.querySelectorAll('.accordion-header');
+
+    headers.forEach(button => {
         button.addEventListener('click', () => {
             const accordionBody = button.nextElementSibling;
 
-            // Закрыть все остальные элементы
-            document.querySelectorAll('.accordion-body').forEach(body => (body.style.display = 'none'));
-
-            // Переключить текущий элемент
+            // Переключение видимости текущего элемента
             if (accordionBody.style.display === 'block') {
                 accordionBody.style.display = 'none';
             } else {
@@ -15,6 +14,19 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Закрыть все вопросы, если пользователь нажимает вне FAQ
+    document.addEventListener('click', (event) => {
+        // Проверяем, кликнули ли по заголовку или его содержимому
+        const clickedInsideFAQ = event.target.closest('.accordion-header') || event.target.closest('.accordion-body');
+
+        if (!clickedInsideFAQ) {
+            // Закрыть все вопросы
+            document.querySelectorAll('.accordion-body').forEach(body => (body.style.display = 'none'));
+        }
+    });
+});
+
 
     // === Quiz Logic ===
     const yesForm = document.getElementById('quiz-yes-form');
@@ -68,4 +80,4 @@ document.addEventListener('DOMContentLoaded', () => {
             sendEmail(noForm);
         });
     }
-});
+;
