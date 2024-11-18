@@ -1,0 +1,234 @@
+/* ===== Hero-секция для Luxury Travel ===== */
+.luxury-hero {
+    background: url('./images/luxury-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.luxury-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.luxury-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.luxury-hero .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.luxury-hero .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Hero-секция для Comfort Travel */
+.comfort-hero {
+    background: url('./style/image/comfort-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.comfort-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.comfort-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comfort-hero .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.comfort-hero .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Hero-секция для Budget Travel */
+.budget-hero {
+    background: url('./style/image/budget-hero.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.budget-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.budget-hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.budget-hero .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.budget-hero .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+
+/* ===== Раздел "Destinations" ===== */
+.destinations {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+}
+
+.destinations h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+    background: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* ===== Раздел "Luxury Travel Tips" ===== */
+.travel-tips {
+    padding: 3rem 1rem;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-align: center;
+}
+
+.travel-tips h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.travel-tips ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.travel-tips li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.travel-tips li i {
+    color: var(--link-hover-color);
+    font-size: 1.2rem;
+}
+
+/* ===== Адаптивность ===== */
+@media (max-width: 768px) {
+    .luxury-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .luxury-hero p {
+        font-size: 1rem;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+
+    .travel-tips h2 {
+        font-size: 1.8rem;
+    }
+
+    .travel-tips ul {
+        padding: 0 1rem;
+    }
+}
+
+.btn-more {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+.btn-more:hover {
+    background-color: var(--link-hover-color);
+}

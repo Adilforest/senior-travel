@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Luxury Travel</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleForRec.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Senior Travel</a>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html" class="nav-item active">Luxury Travel</a></li>
+                    <li><a href="index3.html">Comfort Travel</a></li>
+                    <li><a href="index4.html">Budget Travel</a></li>
+                    <li><a href="index5.html">Lifehacks</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero luxury-hero">
+        <div class="container">
+            <h1>Luxury Travel for Seniors</h1>
+            <p>Embark on extraordinary adventures with style, comfort, and ease.</p>
+            <a href="#destinations" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Luxury Destinations -->
+    <main>
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h2>Top Luxury Destinations</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="./style/image/Maldives.jpg" alt="Maldives">
+                        <div class="card-content">
+                            <h3>Maldives</h3>
+                            <p>Discover serene beaches and overwater bungalows with world-class hospitality.</p>
+                            <p class="more-info" style="display: none;">Experience unparalleled luxury with all-inclusive resorts, crystal-clear waters, and vibrant marine life.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/France_place.jpg" alt="Paris, France">
+                        <div class="card-content">
+                            <h3>Paris, France</h3>
+                            <p>Immerse yourself in fine dining, art, and the charm of the Eiffel Tower.</p>
+                            <p class="more-info" style="display: none;">Explore iconic landmarks like Notre-Dame and the Louvre, and enjoy the vibrant Parisian culture.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Grand_Canal_Venice.jpg" alt="Venice, Italy">
+                        <div class="card-content">
+                            <h3>Venice, Italy</h3>
+                            <p>Enjoy romantic gondola rides and breathtaking architecture.</p>
+                            <p class="more-info" style="display: none;">Discover St. Mark's Basilica, the Doge's Palace, and enjoy the vibrant atmosphere of Venice's canals.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Travel Tips -->
+        <section class="travel-tips">
+            <div class="container">
+                <h2>Luxury Travel Tips</h2>
+                <ul>
+                    <li><i class="fa fa-check-circle"></i> Book premium flights and accommodations early.</li>
+                    <li><i class="fa fa-check-circle"></i> Choose destinations with accessibility features.</li>
+                    <li><i class="fa fa-check-circle"></i> Pack light, but don't forget the essentials.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/theme-toggle.js"></script>
+    <script src="./js/card-toggle.js"></script>
 </body>
 </html>

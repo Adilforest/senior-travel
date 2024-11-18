@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Travel</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleForRec.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Senior Travel</a>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Luxury Travel</a></li>
+                    <li><a href="index3.html" class="nav-item active">Comfort Travel</a></li>
+                    <li><a href="index4.html">Budget Travel</a></li>
+                    <li><a href="index5.html">Lifehacks</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero comfort-hero">
+        <div class="container">
+            <h1>Comfort Travel for Seniors</h1>
+            <p>Travel with ease and relaxation in mind.</p>
+            <a href="#destinations" class="btn">Discover Comfort</a>
+        </div>
+    </section>
+
+    <!-- Comfort Travel Destinations -->
+    <main>
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h2>Top Comfort Destinations</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="./style/image/Japan.jpg" alt="Kyoto, Japan">
+                        <div class="card-content">
+                            <h3>Kyoto, Japan</h3>
+                            <p>Explore serene temples and enjoy peaceful gardens.</p>
+                            <p class="more-info" style="display: none;">Kyoto offers a tranquil escape with its beautiful shrines, traditional tea houses, and scenic Arashiyama Bamboo Grove.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Switzerland.jpg" alt="Interlaken, Switzerland">
+                        <div class="card-content">
+                            <h3>Interlaken, Switzerland</h3>
+                            <p>Relax amidst breathtaking alpine views.</p>
+                            <p class="more-info" style="display: none;">Take a scenic train ride, enjoy gentle hikes, or relax by crystal-clear lakes surrounded by the Swiss Alps.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Sedona.jpg" alt="Sedona, USA">
+                        <div class="card-content">
+                            <h3>Sedona, USA</h3>
+                            <p>Rejuvenate with natural beauty and spiritual retreats.</p>
+                            <p class="more-info" style="display: none;">Sedona is known for its red rock formations, mild weather, and opportunities for relaxation through yoga and wellness retreats.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comfort Travel Tips -->
+        <section class="travel-tips">
+            <div class="container">
+                <h2>Comfort Travel Tips</h2>
+                <ul>
+                    <li><i class="fa fa-check-circle"></i> Opt for direct flights to minimize travel fatigue.</li>
+                    <li><i class="fa fa-check-circle"></i> Choose accommodations with easy access to public transport and elevators.</li>
+                    <li><i class="fa fa-check-circle"></i> Pack a travel pillow and comfortable footwear for long walks.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/theme-toggle.js"></script>
+    <script src="./js/card-toggle.js"></script>
+</body>
+</html>

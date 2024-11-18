@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Travel</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleForRec.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">Senior Travel</a>
+                <button id="menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html">Luxury Travel</a></li>
+                    <li><a href="index3.html">Comfort Travel</a></li>
+                    <li><a href="index4.html" class="nav-item active">Budget Travel</a></li>
+                    <li><a href="index5.html">Lifehacks</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero budget-hero">
+        <div class="container">
+            <h1>Budget Travel for Seniors</h1>
+            <p>Explore the world without breaking the bank.</p>
+            <a href="#destinations" class="btn">Start Saving</a>
+        </div>
+    </section>
+
+    <!-- Budget Travel Destinations -->
+    <main>
+        <section id="destinations" class="destinations">
+            <div class="container">
+                <h2>Top Budget Destinations</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="./style/image/Thailand.jpg" alt="Bangkok, Thailand">
+                        <div class="card-content">
+                            <h3>Bangkok, Thailand</h3>
+                            <p>Enjoy vibrant street markets and affordable cuisine.</p>
+                            <p class="more-info" style="display: none;">Discover cultural landmarks like the Grand Palace and Wat Arun while experiencing the city's lively atmosphere at minimal cost.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Portugal.jpg" alt="Lisbon, Portugal">
+                        <div class="card-content">
+                            <h3>Lisbon, Portugal</h3>
+                            <p>Stroll through picturesque streets on a budget.</p>
+                            <p class="more-info" style="display: none;">Lisbon offers budget-friendly accommodations, free walking tours, and stunning views from its many miradouros.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Morocco.jpg" alt="Marrakech, Morocco">
+                        <div class="card-content">
+                            <h3>Marrakech, Morocco</h3>
+                            <p>Experience exotic markets and stunning landscapes.</p>
+                            <p class="more-info" style="display: none;">Explore the souks of the Medina, relax in beautiful riads, and enjoy authentic Moroccan cuisine at low prices.</p>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Budget Travel Tips -->
+        <section class="travel-tips">
+            <div class="container">
+                <h2>Budget Travel Tips</h2>
+                <ul>
+                    <li><i class="fa fa-check-circle"></i> Travel during the off-season for lower prices and fewer crowds.</li>
+                    <li><i class="fa fa-check-circle"></i> Use budget airlines and public transportation whenever possible.</li>
+                    <li><i class="fa fa-check-circle"></i> Consider staying in hostels or budget hotels with good reviews.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/theme-toggle.js"></script>
+    <script src="./js/card-toggle.js"></script>
+</body>
+</html>
