@@ -294,11 +294,6 @@
     z-index: 100;
 }
 
-/* Эффект при наведении */
-.carousel-arrow:hover {
-    background-color: var(--link-hover-color);
-    transform: scale(1.1);
-}
 
 /* Левая стрелка */
 .left-arrow {
@@ -350,7 +345,7 @@
 
 /* Скрытый текст */
 .more-info {
-    display: none; /* Скрыто по умолчанию */
+    display: none; 
     margin-top: 1rem;
     text-align: left;
 }
@@ -374,4 +369,214 @@
 .more-info ul li a:hover {
     color: var(--link-hover-color);
     text-decoration: underline;
+}
+
+/* ===== Video Section ===== */
+.video-section {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+    text-align: center;
+    color: var(--text-color);
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--button-bg);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; 
+    height: 0;
+    overflow: hidden;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* ===== What to Expect Section ===== */
+.what-to-expect {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.what-to-expect h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--button-bg);
+}
+
+/* Сетка фичей */
+.what-to-expect .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.feature {
+    background: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.feature img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--button-bg);
+}
+
+.feature p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+.faq {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.accordion {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.accordion-header {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 1rem;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background: var(--link-hover-color);
+}
+
+.accordion-body {
+    display: none;
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* ===== Quiz Section ===== */
+.quiz {
+    padding: 4rem 1rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.quiz h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--button-bg);
+}
+
+.quiz-step {
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.quiz p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.quiz select, 
+.quiz textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    transition: border-color 0.3s ease;
+}
+
+.quiz select:focus, 
+.quiz textarea:focus {
+    border-color: var(--button-bg);
+    outline: none;
+}
+
+.quiz-button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin: 0.5rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.quiz-button:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.05);
+}
+
+.submit-button {
+    background: var(--button-bg);
+    color: var(--button-text);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.05);
 }
