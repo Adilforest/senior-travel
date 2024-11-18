@@ -3,9 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Luxury Travel</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_io/site.webmanifest">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="./style/css.css" href="styles.css">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="container">
+                <a href="index.html" class="logo">Senior Travel</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index2.html" class="active">Luxury Travel</a></li>
+                    <li><a href="index3.html">Comfort Travel</a></li>
+                    <li><a href="index4.html">Budget Travel</a></li>
+                    <li><a href="index5.html">Lifehacks</a></li>
+                    <li><a href="index6.html">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i> <!-- Иконка для переключения темы -->
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Luxury Travel for Seniors</h1>
+            <p>Explore the finest destinations with comfort, style, and accessibility.</p>
+        </div>
+    </section>
+
+    <!-- Luxury Travel Content -->
+    <main>
+        <div class="container">
+            <section class="destinations">
+                <h2>Top Luxury Destinations</h2>
+                <div class="grid">
+                    <div class="destination">
+                        <img src="luxury1.jpg" alt="Luxury Destination 1">
+                        <h3>Maldives</h3>
+                        <p>Enjoy pristine beaches and world-class resorts.</p>
+                    </div>
+                    <div class="destination">
+                        <img src="luxury2.jpg" alt="Luxury Destination 2">
+                        <h3>Paris, France</h3>
+                        <p>Experience the finest dining and cultural heritage.</p>
+                    </div>
+                    <div class="destination">
+                        <img src="luxury3.jpg" alt="Luxury Destination 3">
+                        <h3>Venice, Italy</h3>
+                        <p>Discover romance and beauty on the waterways.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="luxury-tips">
+                <h2>Luxury Travel Tips</h2>
+                <ul>
+                    <li><i class="fa fa-check-circle"></i> Book early to secure the best deals.</li>
+                    <li><i class="fa fa-check-circle"></i> Choose resorts with senior-friendly amenities.</li>
+                    <li><i class="fa fa-check-circle"></i> Pack light for easier mobility.</li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS для переключения тем -->
+    <script src="./js/theme-toggle.js"></script>
 </body>
 </html>
