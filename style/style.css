@@ -1,3 +1,4 @@
+/* Общие переменные темы */
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -11,23 +12,161 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0071c2;
+    --link-hover-color: #005fa3;
+    --button-bg: #0071c2;
+    --button-text: #ffffff;
+}
+
+body.dark-theme {
+    --bg-color: #2b2b2b;
+    --text-color: #f0f0f0;
+    --link-color: #4dafff;
+    --link-hover-color: #82caff;
+    --button-bg: #444444;
+    --button-text: #f0f0f0;
+}
+
+
+/* Общие стили для навбара */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1rem 2rem;
+    border-bottom: 2px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .logo:hover {
+    color: var(--link-hover-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
     margin: 0;
     padding: 0;
 }
 
-/* Остальные стили остаются прежними, но используют переменные */
-.hero {
-    background: url('hero-image.jpg') center/cover no-repeat;
-    color: var(--text-color);
+.nav-item {
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--link-color);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-/* Кнопка переключения темы */
-.theme-toggle {
+.nav-item:hover {
     background-color: var(--button-bg);
     color: var(--button-text);
+}
+
+.nav-item.active {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+}
+
+.theme-toggle {
+    background: var(--button-bg);
+    color: var(--button-text);
     border: none;
+    border-radius: 5px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    border-radius: 5px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+    background-color: var(--link-hover-color);
+    color: var(--button-text);
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: var(--bg-color);
+        border: 1px solid var(--border-color);
+        padding: 1rem;
+        position: absolute;
+        top: 70px; /* Высота навбара */
+        right: 2rem;
+        display: none; /* Скрыто по умолчанию */
+    }
+
+    .nav-links.show {
+        display: flex; /* Показывается при клике на "гамбургер" */
+    }
+
+    .theme-toggle {
+        margin-left: 1rem;
+    }
+}
+
+
+
+/* Стили кнопки "гамбургер" */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/* Стили для навигационного меню */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Адаптивный дизайн для мобильных устройств */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Показываем кнопку "гамбургер" */
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 2rem;
+        top: 70px;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        border: 1px solid var(--border-color);
+        padding: 1rem;
+        display: none; /* Скрываем по умолчанию */
+    }
+
+    .nav-links.show {
+        display: flex; /* Показываем при нажатии "гамбургера" */
+    }
 }
