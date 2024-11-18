@@ -183,26 +183,4 @@ footer .social-links a {
 footer .social-links a:hover {
     color: var(--link-hover-color);
 }
-.imageContainer{
-    background-image: url(https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/homepage/niagarafallsstatepark-home-2024-crows-nest-stairs-desktop.jpg);
-    width: 100vw;
-    height: 80vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 50px;
-}
-.textContainer{
-    background-color: #0071c2;
-    height: 300px;
-    width: 800px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    flex-direction: column;
-}
+
