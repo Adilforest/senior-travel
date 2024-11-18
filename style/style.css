@@ -1,0 +1,33 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0071c2;
+    --link-hover-color: #005fa3;
+    --border-color: #e6e6e6;
+    --button-bg: #0071c2;
+    --button-text: #ffffff;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Остальные стили остаются прежними, но используют переменные */
+.hero {
+    background: url('hero-image.jpg') center/cover no-repeat;
+    color: var(--text-color);
+}
+
+/* Кнопка переключения темы */
+.theme-toggle {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
