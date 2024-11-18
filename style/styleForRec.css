@@ -40,12 +40,12 @@
 
 /* Comfort Hero */
 .comfort-hero {
-    background: url('./style/image/comfort-hero.jpg') center/cover no-repeat;
+    background: url('./image/comfBG.webp') center/cover no-repeat;
 }
 
 /* Budget Hero */
 .budget-hero {
-    background: url('./style/image/budget-hero.jpg') center/cover no-repeat;
+    background: url('./image/BASEBG.jpg') center/cover no-repeat;
 }
 
 /* ===== Секция "Destinations" ===== */

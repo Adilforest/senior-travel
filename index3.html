@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,28 @@
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/styleForRec.css">
+    <link rel="stylesheet" href="./style/FAQ-Quiz.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <!-- Ссылки навигации -->
                 <ul class="nav-links">
                     <li><a href="home.html" class="nav-item">Home</a></li>
                     <li><a href="index2.html" class="nav-item">Luxury Travel</a></li>
-                    <li><a href="index3.html" class="nav-item">Comfort Travel</a></li>
+                    <li><a href="index3.html" class="nav-item active">Comfort Travel</a></li>
                     <li><a href="index4.html" class="nav-item">Budget Travel</a></li>
                     <li><a href="lifehacks.html" class="nav-item">Lifehacks</a></li>
                     <li><a href="contactUs.html" class="nav-item">Contact</a></li>
                 </ul>
-        
-                <!-- Кнопка смены темы -->
                 <button id="theme-toggle" class="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -41,76 +40,367 @@
     <!-- Hero Section -->
     <section class="hero comfort-hero">
         <div class="container">
-            <h1>Comfort Travel for Seniors</h1>
-            <p>Travel with ease and relaxation in mind.</p>
-            <a href="#destinations" class="btn">Discover Comfort</a>
+            <div class="text-box">
+                <h1>Explore travel's softer side</h1>
+                <p style="text-align: left;">
+                    Our Comfort trips are all about adventure, with a higher level of comfort than our Original and
+                    Basix trips. These slower-paced trips are built to smooth some of travels rougher edges, meaning
+                    you’ll be on private transport more often, the pace will be more relaxed and your accommodation will
+                    be a touch above the essentials. You’ll also be treated to more included meals and leader-led
+                    activities, with a focus on embracing all things local.
+                </p>
+                <a href="#destinations" class="btn">Explore Now</a>
+            </div>
         </div>
     </section>
 
-    <!-- Comfort Travel Destinations -->
     <main>
         <section id="destinations" class="destinations">
             <div class="container">
-                <h2>Top Comfort Destinations</h2>
+                <h2>Top Comfort Travel Destinations</h2>
                 <div class="grid">
+                    <!-- Prague -->
                     <div class="card">
-                        <img src="./style/image/Japan.jpg" alt="Kyoto, Japan">
+                        <img src="./style/image/Prague, Czech Republic.jpg" alt="Prague, Czech Republic">
                         <div class="card-content">
-                            <h3>Kyoto, Japan</h3>
-                            <p>Explore serene temples and enjoy peaceful gardens.</p>
-                            <p class="more-info" style="display: none;">Kyoto offers a tranquil escape with its beautiful shrines, traditional tea houses, and scenic Arashiyama Bamboo Grove.</p>
+                            <h3>Prague, Czech Republic</h3>
+                            <p style="text-align: left;">Explore charming cobblestone streets and majestic castles.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Enjoy affordable and cozy tours in Prague:</p>
+                                <ul>
+                                    <li><a href="https://www.praguetours.com" target="_blank">Prague Tours</a></li>
+                                    <li><a href="https://www.budgettrips.cz" target="_blank">Budget Trips in Prague</a>
+                                    </li>
+                                    <li><a href="https://www.comfortprague.com" target="_blank">Comfort Prague</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Barcelona -->
+                    <div class="card">
+                        <img src="./style/image/Barcelona, Spain.jpeg" alt="Barcelona, Spain">
+                        <div class="card-content">
+                            <h3>Barcelona, Spain</h3>
+                            <p style="text-align: left;">Immerse yourself in culture, art, and scenic beaches.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Affordable comfort travel options in Barcelona:</p>
+                                <ul>
+                                    <li><a href="https://www.barcelonatravel.com" target="_blank">Barcelona Travel</a>
+                                    </li>
+                                    <li><a href="https://www.citytoursbarcelona.com" target="_blank">City Tours
+                                            Barcelona</a></li>
+                                    <li><a href="https://www.comfortspain.com" target="_blank">Comfort Spain</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Lisbon -->
+                    <div class="card">
+                        <img src="./style/image/LisbonP.jpeg" alt="Lisbon, Portugal">
+                        <div class="card-content">
+                            <h3>Lisbon, Portugal</h3>
+                            <p style="text-align: left;">Discover a mix of modern charm and historical wonders.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Explore Lisbon’s comfort travel opportunities:</p>
+                                <ul>
+                                    <li><a href="https://www.lisbontrips.com" target="_blank">Lisbon Trips</a></li>
+                                    <li><a href="https://www.portugalcomfort.com" target="_blank">Portugal Comfort
+                                            Tours</a></li>
+                                    <li><a href="https://www.affordablelisbon.com" target="_blank">Affordable Lisbon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- More destinations -->
+                    <div class="card">
+                        <img src="./style/image/Scenic Train .jpeg" alt="Coastal Train Journey">
+                        <div class="card-content">
+                            <h3>Scenic Train Journeys</h3>
+                            <p style="text-align: left;">Relax and enjoy breathtaking views on coastal train rides.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Experience comfortable train journeys:</p>
+                                <ul>
+                                    <li><a href="https://www.trainvacations.com" target="_blank">Train Vacations</a>
+                                    </li>
+                                    <li><a href="https://www.scenictrainrides.com" target="_blank">Scenic Train
+                                            Rides</a></li>
+                                    <li><a href="https://www.railcomfort.com" target="_blank">Rail Comfort</a></li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./style/image/Switzerland.jpg" alt="Interlaken, Switzerland">
+                        <img src="./style/image/Budapest, Hungary.jpeg" alt="Budapest, Hungary">
                         <div class="card-content">
-                            <h3>Interlaken, Switzerland</h3>
-                            <p>Relax amidst breathtaking alpine views.</p>
-                            <p class="more-info" style="display: none;">Take a scenic train ride, enjoy gentle hikes, or relax by crystal-clear lakes surrounded by the Swiss Alps.</p>
+                            <h3>Budapest, Hungary</h3>
+                            <p style="text-align: left;">Explore the historic thermal baths and stunning Danube River views.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Discover budget-friendly tours and activities in Budapest:</p>
+                                <ul>
+                                    <li><a href="https://www.budapestbudgettours.com" target="_blank">Budapest Budget Tours</a></li>
+                                    <li><a href="https://www.thermalbathsbudapest.com" target="_blank">Thermal Baths in Budapest</a></li>
+                                    <li><a href="https://www.danubecruises.com" target="_blank">Danube River Cruises</a></li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
                         </div>
                     </div>
                     <div class="card">
-                        <img src="./style/image/Sedona.jpg" alt="Sedona, USA">
+                        <img src="./style/image/Krakow, Poland.jpeg" alt="Krakow, Poland">
                         <div class="card-content">
-                            <h3>Sedona, USA</h3>
-                            <p>Rejuvenate with natural beauty and spiritual retreats.</p>
-                            <p class="more-info" style="display: none;">Sedona is known for its red rock formations, mild weather, and opportunities for relaxation through yoga and wellness retreats.</p>
+                            <h3>Krakow, Poland</h3>
+                            <p style="text-align: left;">Step back in time with charming Old Town squares and cultural landmarks.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Experience affordable comfort tours in Krakow:</p>
+                                <ul>
+                                    <li><a href="https://www.krakowcitytours.com" target="_blank">Krakow City Tours</a></li>
+                                    <li><a href="https://www.polandcomforttours.com" target="_blank">Poland Comfort Tours</a></li>
+                                    <li><a href="https://www.oldtownkrakow.com" target="_blank">Old Town Krakow Tours</a></li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Edinburgh, Scotland.jpeg" alt="Edinburgh, Scotland">
+                        <div class="card-content">
+                            <h3>Edinburgh, Scotland</h3>
+                            <p style="text-align: left;">Enjoy the stunning scenery, historic castles, and warm Scottish hospitality.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Discover comfort travel in Edinburgh:</p>
+                                <ul>
+                                    <li><a href="https://www.edinburghtravel.com" target="_blank">Edinburgh Travel</a></li>
+                                    <li><a href="https://www.scotlandtours.com" target="_blank">Scotland Tours</a></li>
+                                    <li><a href="https://www.comfortedinburgh.com" target="_blank">Comfort Edinburgh Tours</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./style/image/Florence, Italy.jpeg" alt="Florence, Italy">
+                        <div class="card-content">
+                            <h3>Florence, Italy</h3>
+                            <p style="text-align: left;">Immerse yourself in Renaissance art and architectural marvels.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Affordable and convenient tours in Florence:</p>
+                                <ul>
+                                    <li><a href="https://www.florencebudgettours.com" target="_blank">Florence Budget Tours</a></li>
+                                    <li><a href="https://www.italycomforttravel.com" target="_blank">Italy Comfort Travel</a></li>
+                                    <li><a href="https://www.renaissanceflorence.com" target="_blank">Renaissance Florence Tours</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <div class="container" style="position: relative; padding: 0 50px;">
+            <h2>Comfort Travel Tips</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <!-- Карточка 1 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/download.jpeg" alt="George P.">
+                            <p>"Travel off-season to avoid crowds and save money while enjoying the same great experience."</p>
+                            <span>- George P.</span>
+                        </div>
+                        <!-- Карточка 2 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person5.jpeg" alt="Emily R.">
+                            <p>"Choose accommodations near public transport for convenience and affordability."</p>
+                            <span>- Emily R.</span>
+                        </div>
+                        <!-- Карточка 3 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person1.jpeg" alt="David H.">
+                            <p>"Pack layers to stay comfortable no matter the weather changes during your trip."</p>
+                            <span>- David H.</span>
+                        </div>
+                        <!-- Карточка 4 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person6.jpeg" alt="Margaret T.">
+                            <p>"Take advantage of free walking tours to explore cities and learn about local history."</p>
+                            <span>- Margaret T.</span>
+                        </div>
+                        <!-- Карточка 5 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person2.jpeg" alt="Paul K.">
+                            <p>"Always carry a reusable water bottle to stay hydrated and save on unnecessary costs."</p>
+                            <span>- Paul K.</span>
+                        </div>
+                        <!-- Карточка 6 -->
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person7.jpeg" alt="Linda B.">
+                            <p>"Opt for smaller group tours for a more personalized and relaxed travel experience."</p>
+                            <span>- Linda B.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="what-to-expect">
+            <div class="container">
+                <h2>What to Expect</h2>
+                <div class="grid">
+                    <!-- Local Leader -->
+                    <div class="feature">
+                        <img src="./style/image_comf/Local Leader.webp" alt="Local Leader">
+                        <h3>Local Leader</h3>
+                        <p>
+                            The passion of our local leaders is what makes our trips so special. You’ll have a highly experienced 
+                            leader with invaluable local knowledge who’ll be there for you every step of the way.
+                        </p>
+                    </div>
+        
+                    <!-- Group Activities -->
+                    <div class="feature">
+                        <img src="./style/image_comf/Group Activities.webp" alt="Group Activities">
+                        <h3>Group Activities</h3>
+                        <p>
+                            Our Comfort-style trips follow a more structured itinerary and feature more included activities. 
+                            This leaves you to reap the benefits of more time in the company of a local leader – and their 
+                            local knowledge.
+                        </p>
+                    </div>
+        
+                    <!-- Some Meals -->
+                    <div class="feature">
+                        <img src="./style/image_comf/Some Meals.webp" alt="Some Meals">
+                        <h3>Some Meals</h3>
+                        <p>
+                            Several meals are included – all of your breakfasts along the way and then perhaps visits to some 
+                            of our favourite restaurants with your group to get a taste of the region.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section class="video-section">
+            <div class="container">
+                <h2>Comfort Travel Highlights</h2>
+                <div class="video-wrapper">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/7KuELsjgREU"
+                        title="Comfort Travel Highlights" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">Who are Intrepid travellers?</button>
+                        <div class="accordion-body">
+                            <p>Intrepid travellers are curious, adventurous, and open-minded individuals who love
+                                exploring the world.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">Are there age restrictions on trips?</button>
+                        <div class="accordion-body">
+                            <p>Most of our trips are open to all ages, but some have minimum age requirements. Check
+                                individual trip details for specifics.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How many people will be on my trip?</button>
+                        <div class="accordion-body">
+                            <p>Our group sizes are small, with an average of 10 travellers per group.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- Comfort Travel Tips -->
-        <section class="travel-tips">
+        <section class="quiz">
             <div class="container">
-                <h2>Comfort Travel Tips</h2>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i> Opt for direct flights to minimize travel fatigue.</li>
-                    <li><i class="fa fa-check-circle"></i> Choose accommodations with easy access to public transport and elevators.</li>
-                    <li><i class="fa fa-check-circle"></i> Pack a travel pillow and comfortable footwear for long walks.</li>
-                </ul>
+                <h2>Was this page helpful?</h2>
+                <div class="quiz-step" id="step1">
+                    <button class="quiz-button" data-answer="yes">Yes</button>
+                    <button class="quiz-button" data-answer="no">No</button>
+                </div>
+
+                <!-- Step 2 for "Yes" -->
+                <form id="quiz-yes-form" class="quiz-step" style="display: none;">
+                    <p>Which section was most helpful?</p>
+                    <select name="helpful_section" required>
+                        <option value="design">Design</option>
+                        <option value="ease_of_use">Ease of Use</option>
+                        <option value="content">Content</option>
+                    </select>
+
+                    <p>What tour are you considering?</p>
+                    <select name="tour_type" required>
+                        <option value="luxury">Luxury</option>
+                        <option value="comfort">Comfort</option>
+                        <option value="budget">Budget</option>
+                    </select>
+
+                    <p>Additional comments or recommendations:</p>
+                    <textarea name="comments" placeholder="Your comments here" rows="4"></textarea>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+
+                <!-- Step 2 for "No" -->
+                <form id="quiz-no-form" class="quiz-step" style="display: none;">
+                    <p>What improvements would you recommend?</p>
+                    <select name="improvements" required>
+                        <option value="design">Improve Design</option>
+                        <option value="content">Add More Content</option>
+                        <option value="usability">Improve Usability</option>
+                    </select>
+
+                    <p>Additional feedback:</p>
+                    <textarea name="comments" placeholder="Your feedback here" rows="4"></textarea>
+
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Senior Travel.</p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
 
-    <!-- JS -->
-    <script src="./js/theme-toggle.js"></script>
-    <script src="./js/card-toggle.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init('1uUg2a4samzyV1xiV');
+        </script>
+
+        <!-- JS -->
+        <script src="./js/faq-quiz.js"></script>
+        <script src="./js/theme-toggle.js"></script>
+        <script src="./js/card-toggle.js"></script>
 </body>
+
 </html>

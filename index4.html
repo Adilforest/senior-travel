@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +8,28 @@
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/styleForRec.css">
+    <link rel="stylesheet" href="./style/FAQ-Quiz.css">
 </head>
+
 <body>
     <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="container">
-                <!-- Ссылки навигации -->
                 <ul class="nav-links">
                     <li><a href="home.html" class="nav-item">Home</a></li>
                     <li><a href="index2.html" class="nav-item">Luxury Travel</a></li>
                     <li><a href="index3.html" class="nav-item">Comfort Travel</a></li>
-                    <li><a href="index4.html" class="nav-item">Budget Travel</a></li>
+                    <li><a href="index4.html" class="nav-item active">Budget Travel</a></li>
                     <li><a href="lifehacks.html" class="nav-item">Lifehacks</a></li>
                     <li><a href="contactUs.html" class="nav-item">Contact</a></li>
                 </ul>
-        
-                <!-- Кнопка смены темы -->
                 <button id="theme-toggle" class="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -41,42 +40,184 @@
     <!-- Hero Section -->
     <section class="hero budget-hero">
         <div class="container">
-            <h1>Budget Travel for Seniors</h1>
-            <p>Explore the world without breaking the bank.</p>
-            <a href="#destinations" class="btn">Start Saving</a>
+            <div class="text-box">
+                <h1>Travel Smart on a Budget</h1>
+                <p style="text-align: left;">
+                    Budget Travel lets you see the world without breaking the bank. Enjoy carefully selected
+                    destinations and experiences that provide exceptional value. Discover how you can travel the world
+                    affordably while still having unforgettable experiences.
+                </p>
+                <a href="#destinations" class="btn">Explore Now</a>
+            </div>
         </div>
     </section>
 
-    <!-- Budget Travel Destinations -->
     <main>
         <section id="destinations" class="destinations">
             <div class="container">
-                <h2>Top Budget Destinations</h2>
+                <h2>Top Budget Travel Destinations</h2>
                 <div class="grid">
+                    <!-- Mexico City -->
                     <div class="card">
-                        <img src="./style/image/Thailand.jpg" alt="Bangkok, Thailand">
+                        <img src="./style/image-base/Mexico City, Mexico.jpeg" alt="Mexico City, Mexico">
+                        <div class="card-content">
+                            <h3>Mexico City, Mexico</h3>
+                            <p style="text-align: left;">Explore vibrant culture and affordable street food.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel options in Mexico City:</p>
+                                <ul>
+                                    <li><a href="https://www.budgetmexico.com" target="_blank">Budget Mexico Tours</a>
+                                    </li>
+                                    <li><a href="https://www.mexicocitytravel.com" target="_blank">Mexico City
+                                            Travel</a></li>
+                                    <li><a href="https://www.culturecheap.com" target="_blank">Affordable Culture
+                                            Tours</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Hanoi -->
+                    <div class="card">
+                        <img src="./style/image-base/Hanoi, Vietnam.jpeg" alt="Hanoi, Vietnam">
+                        <div class="card-content">
+                            <h3>Hanoi, Vietnam</h3>
+                            <p style="text-align: left;">Savor delicious street food and scenic views on a budget.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel in Hanoi:</p>
+                                <ul>
+                                    <li><a href="https://www.hanoibudget.com" target="_blank">Hanoi Budget Tours</a>
+                                    </li>
+                                    <li><a href="https://www.vietnamtravel.com" target="_blank">Vietnam Travel Deals</a>
+                                    </li>
+                                    <li><a href="https://www.streetfoodtours.com" target="_blank">Street Food Tours</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Sofia -->
+                    <div class="card">
+                        <img src="./style/image-base/Sofia, Bulgaria.jpg" alt="Sofia, Bulgaria">
+                        <div class="card-content">
+                            <h3>Sofia, Bulgaria</h3>
+                            <p style="text-align: left;">Discover a hidden gem with budget-friendly activities and historic charm.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Affordable tours in Sofia:</p>
+                                <ul>
+                                    <li><a href="https://www.sofiatravel.com" target="_blank">Sofia Travel</a></li>
+                                    <li><a href="https://www.bulgariabudget.com" target="_blank">Bulgaria Budget
+                                            Tours</a></li>
+                                    <li><a href="https://www.easterneuropecheap.com" target="_blank">Eastern Europe
+                                            Deals</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Tashkent -->
+                    <div class="card">
+                        <img src="./style/image-base/Tashkent, Uzbekistan.jpg" alt="Tashkent, Uzbekistan">
+                        <div class="card-content">
+                            <h3>Tashkent, Uzbekistan</h3>
+                            <p style="text-align: left;">Explore historic markets and beautiful Islamic architecture.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel in Tashkent:</p>
+                                <ul>
+                                    <li><a href="https://www.tashkenttravel.com" target="_blank">Tashkent Travel</a>
+                                    </li>
+                                    <li><a href="https://www.centralasiabudget.com" target="_blank">Central Asia Budget
+                                            Tours</a></li>
+                                    <li><a href="https://www.tashkentculture.com" target="_blank">Tashkent Culture
+                                            Tours</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Almaty -->
+                    <div class="card">
+                        <img src="./style/image-base/Almaty, Kazakhstan.jpeg" alt="Almaty, Kazakhstan">
+                        <div class="card-content">
+                            <h3>Almaty, Kazakhstan</h3>
+                            <p style="text-align: left;">Surround yourself with mountains, lakes, and vibrant bazaars.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Explore Almaty on a budget:</p>
+                                <ul>
+                                    <li><a href="https://www.almatytours.com" target="_blank">Almaty Tours</a></li>
+                                    <li><a href="https://www.kazakhstanbudget.com" target="_blank">Kazakhstan Budget
+                                            Trips</a></li>
+                                    <li><a href="https://www.almatyadventures.com" target="_blank">Almaty Adventures</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="btn-more">More</button>
+                        </div>
+                    </div>
+
+                    <!-- Bangkok -->
+                    <div class="card">
+                        <img src="./style/image-base/Bangkok, Thailand.jpeg" alt="Bangkok, Thailand">
                         <div class="card-content">
                             <h3>Bangkok, Thailand</h3>
-                            <p>Enjoy vibrant street markets and affordable cuisine.</p>
-                            <p class="more-info" style="display: none;">Discover cultural landmarks like the Grand Palace and Wat Arun while experiencing the city's lively atmosphere at minimal cost.</p>
+                            <p style="text-align: left;">Enjoy bustling markets, temples, and delicious street food.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel in Bangkok:</p>
+                                <ul>
+                                    <li><a href="https://www.bangkokbudgettours.com" target="_blank">Bangkok Budget
+                                            Tours</a></li>
+                                    <li><a href="https://www.thailandcheap.com" target="_blank">Thailand Cheap
+                                            Adventures</a></li>
+                                    <li><a href="https://www.bangkokexplore.com" target="_blank">Explore Bangkok</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
                         </div>
                     </div>
+
+                    <!-- Bali -->
                     <div class="card">
-                        <img src="./style/image/Portugal.jpg" alt="Lisbon, Portugal">
+                        <img src="./style/image-base/Bali, Indonesia.jpeg" alt="Bali, Indonesia">
                         <div class="card-content">
-                            <h3>Lisbon, Portugal</h3>
-                            <p>Stroll through picturesque streets on a budget.</p>
-                            <p class="more-info" style="display: none;">Lisbon offers budget-friendly accommodations, free walking tours, and stunning views from its many miradouros.</p>
+                            <h3>Bali, Indonesia</h3>
+                            <p style="text-align: left;">Relax on serene beaches and explore lush landscapes affordably.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel in Bali:</p>
+                                <ul>
+                                    <li><a href="https://www.balibudgettravel.com" target="_blank">Bali Budget
+                                            Travel</a></li>
+                                    <li><a href="https://www.indonesiadeals.com" target="_blank">Indonesia Travel
+                                            Deals</a></li>
+                                    <li><a href="https://www.balivibes.com" target="_blank">Bali Vibes</a></li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
                         </div>
                     </div>
+
+                    <!-- Kathmandu -->
                     <div class="card">
-                        <img src="./style/image/Morocco.jpg" alt="Marrakech, Morocco">
+                        <img src="./style/image-base/Kathmandu, Nepal.jpeg" alt="Kathmandu, Nepal">
                         <div class="card-content">
-                            <h3>Marrakech, Morocco</h3>
-                            <p>Experience exotic markets and stunning landscapes.</p>
-                            <p class="more-info" style="display: none;">Explore the souks of the Medina, relax in beautiful riads, and enjoy authentic Moroccan cuisine at low prices.</p>
+                            <h3>Kathmandu, Nepal</h3>
+                            <p style="text-align: left;">Immerse yourself in Himalayan culture and sacred sites.</p>
+                            <div class="more-info" style="display: none;">
+                                <p>Budget-friendly travel in Kathmandu:</p>
+                                <ul>
+                                    <li><a href="https://www.kathmandutours.com" target="_blank">Kathmandu Tours</a>
+                                    </li>
+                                    <li><a href="https://www.nepalbudget.com" target="_blank">Nepal Budget
+                                            Adventures</a></li>
+                                    <li><a href="https://www.himalayatravel.com" target="_blank">Himalaya Travel</a>
+                                    </li>
+                                </ul>
+                            </div>
                             <button class="btn-more">More</button>
                         </div>
                     </div>
@@ -84,33 +225,185 @@
             </div>
         </section>
 
-        <!-- Budget Travel Tips -->
-        <section class="travel-tips">
+
+        <div class="container" style="position: relative; padding: 0 50px;">
+            <h2>Budget Travel Tips</h2>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="carousel-track">
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person6.jpeg" alt="Anna L.">
+                            <p>"Book flights during off-peak seasons to save money."</p>
+                            <span>- Anna L.</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person4.jpeg" alt="Mark J.">
+                            <p>"Stay in hostels or guesthouses for affordable and cozy accommodations."</p>
+                            <span>- Mark J.</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/download.jpeg" alt="Julia M.">
+                            <p>"Opt for public transport to save money and explore like a local."</p>
+                            <span>- Juliam M.</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="./style/images-person/person2.jpeg" alt="Tom K.">
+                            <p>"Use local markets for meals and souvenirs to cut costs."</p>
+                            <span>- Tom K.</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="./style/image/Jane.jpg" alt="Sophie W.">
+                            <p>"Plan your itinerary to include free attractions and parks."</p>
+                            <span>- Sophie W.</span>
+                        </div>
+                        <div class="testimonial-card">
+                            <img src="./style/image/John D.webp" alt="Liam G.">
+                            <p>"Always keep an eye out for discounts and deals online."</p>
+                            <span>- Liam G.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="what-to-expect">
             <div class="container">
-                <h2>Budget Travel Tips</h2>
-                <ul>
-                    <li><i class="fa fa-check-circle"></i> Travel during the off-season for lower prices and fewer crowds.</li>
-                    <li><i class="fa fa-check-circle"></i> Use budget airlines and public transportation whenever possible.</li>
-                    <li><i class="fa fa-check-circle"></i> Consider staying in hostels or budget hotels with good reviews.</li>
-                </ul>
+                <h2>What to Expect</h2>
+                <div class="grid">
+                    <!-- Local Leader -->
+                    <div class="feature">
+                        <img src="./style/image-base/Local.webp" alt="Local Leader">
+                        <h3>Local Leader</h3>
+                        <p>
+                            All of our Basix-style adventures are led by a local leader whose specialty is getting you
+                            from A to B,
+                            showing you the sights, and letting you in on the secrets that make their region tick. Your
+                            leader
+                            certainly won’t be holding your hand, but when it comes to recommendations for food,
+                            attractions worth
+                            a visit, or local language tips, there is no one better to turn to.
+                        </p>
+                    </div>
+
+                    <!-- Explore Your Own Way -->
+                    <div class="feature">
+                        <img src="./style/image-base/Explore.webp" alt="Explore Your Own Way">
+                        <h3>Explore Your Own Way</h3>
+                        <p>
+                            We work plenty of free time into our Basix itineraries and offer lots of optional activities
+                            so you can
+                            decide where and how to spend your time and money. It's the opportunity to experience as
+                            much of the
+                            destination as possible, but without paying for a stack of extra inclusions you may not
+                            want.
+                        </p>
+                    </div>
+
+                    <!-- Group Activities -->
+                    <div class="feature">
+                        <img src="./style/image-base/Group activities.webp" alt="Group Activities">
+                        <h3>Group Activities</h3>
+                        <p>
+                            In addition to lots of optional activities, there are a few group activities included as
+                            well. These
+                            might include orientation walks in each city, visits to local markets, and entrance fees for
+                            some of
+                            the major highlights along the way. Although meals are generally not included, your leader
+                            is on hand
+                            to help you make some awesome food discoveries.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Senior Travel. All rights reserved.</p>
-            <ul class="social-links">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-        </div>
-    </footer>
 
-    <!-- JS -->
-    <script src="./js/theme-toggle.js"></script>
-    <script src="./js/card-toggle.js"></script>
+        <section class="video-section">
+            <div class="container">
+                <h2>Budget Travel Highlights</h2>
+                <div class="video-wrapper">
+                    <iframe width="100%" height="500" src="https://www.youtube.com/embed/9jILrLASyPw"
+                        title="Budget Travel Highlights" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">What is budget travel?</button>
+                        <div class="accordion-body">
+                            <p>Budget travel is all about exploring the world while keeping expenses to a minimum.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">How can I save money on flights?</button>
+                        <div class="accordion-body">
+                            <p>Book during off-peak seasons, use budget airlines, and look out for flight deals online.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">What are some free attractions to explore?</button>
+                        <div class="accordion-body">
+                            <p>Many cities offer free parks, museums, and cultural landmarks that are worth exploring.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <div class="container">
+                <h2>Was this page helpful?</h2>
+                <div class="quiz-step" id="step1">
+                    <button class="quiz-button" data-answer="yes">Yes</button>
+                    <button class="quiz-button" data-answer="no">No</button>
+                </div>
+                <form id="quiz-yes-form" class="quiz-step" style="display: none;">
+                    <p>What was most helpful?</p>
+                    <select name="helpful_section" required>
+                        <option value="destinations">Destinations</option>
+                        <option value="tips">Travel Tips</option>
+                        <option value="content">Overall Content</option>
+                    </select>
+                    <p>Additional comments:</p>
+                    <textarea name="comments" placeholder="Your comments here" rows="4"></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+                <form id="quiz-no-form" class="quiz-step" style="display: none;">
+                    <p>What improvements would you recommend?</p>
+                    <textarea name="improvements" placeholder="Your suggestions here" rows="4"></textarea>
+                    <button type="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Senior Travel.</p>
+                <ul class="social-links">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+            emailjs.init('1uUg2a4samzyV1xiV');
+        </script>
+        <script src="./js/faq-quiz.js"></script>
+        <script src="./js/theme-toggle.js"></script>
+        <script src="./js/card-toggle.js"></script>
 </body>
+
 </html>
