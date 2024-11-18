@@ -29,3 +29,10 @@
     opacity: 0;
     transition: opacity 0.5s;
 }
+.alert{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
