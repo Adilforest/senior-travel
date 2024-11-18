@@ -21,8 +21,6 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('.accordion-body').forEach(body => (body.style.display = 'none'));
         }
     });
-});
-
 
     // === Quiz Logic ===
     const yesForm = document.getElementById('quiz-yes-form');
@@ -31,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.quiz-button').forEach(button => {
         button.addEventListener('click', () => {
             const answer = button.getAttribute('data-answer');
-            document.getElementById('step1').style.display = 'none'; г
+            document.getElementById('step1').style.display = 'none'; 
 
             if (answer === 'yes') {
                 yesForm.style.display = 'block';
@@ -44,17 +42,17 @@ document.addEventListener('DOMContentLoaded', () => {
     // === EmailJS Logic ===
     const sendEmail = (form) => {
         const formData = new FormData(form);
-        const emailData = Object.fromEntries(formData.entries()); 
+        const emailData = Object.fromEntries(formData.entries());
 
         emailjs
             .send('service_dw3mcoa', 'template_av879u8', emailData, '1uUg2a4samzyV1xiV') 
             .then(() => {
                 alert('Thank you for your feedback!');
-                form.reset(); 
+                form.reset();
                 form.style.display = 'none'; 
             })
             .catch(error => {
-                console.error('EmailJS Error:', error); 
+                console.error('EmailJS Error:', error);
                 alert('Failed to send feedback. Please try again.');
             });
     };
@@ -72,4 +70,4 @@ document.addEventListener('DOMContentLoaded', () => {
             sendEmail(noForm);
         });
     }
-;
+});
