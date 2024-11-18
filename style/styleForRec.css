@@ -297,25 +297,25 @@
 
 /* Левая стрелка */
 .left-arrow {
-    left: 10px; /* Отступ от левой границы */
+    left: 10px; 
 }
 
 /* Правая стрелка */
 .right-arrow {
-    right: 10px; /* Отступ от правой границы */
+    right: 10px; 
 }
 
 /* Для мобильных устройств */
 @media (max-width: 768px) {
     .carousel-arrow {
-        width: 30px; /* Уменьшение размера стрелок */
+        width: 30px; 
         height: 30px;
     }
     .left-arrow {
-        left: 5px; /* Уменьшенный отступ */
+        left: 5px; 
     }
     .right-arrow {
-        right: 5px; /* Уменьшенный отступ */
+        right: 5px; 
     }
 }
 
@@ -455,4 +455,55 @@
     font-size: 1rem;
     line-height: 1.5;
     color: var(--text-color);
+}
+
+.luxury-hero {
+    background: url('./image/Rich.jpg') center/cover no-repeat;
+    color: #ffffff;
+    text-align: center;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.luxury-hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.text-box {
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.text-box p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.text-box .btn {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.text-box .btn:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.05); 
 }

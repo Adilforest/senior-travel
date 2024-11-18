@@ -41,7 +41,6 @@ body.dark-theme {
 .navbar {
     display: flex;
     justify-content: center;
-    /* Центрируем всё содержимое */
     align-items: center;
     padding: 1rem 2rem;
     background-color: var(--bg-color);
@@ -50,20 +49,18 @@ body.dark-theme {
     top: 0;
     z-index: 1000;
     height: 70px;
-    /* Фиксируем высоту навбара */
+    
 }
 
-/* Центрирование кнопок навигации */
 .nav-links {
     list-style: none;
     display: flex;
     gap: 2rem;
-    /* Расстояние между кнопками */
+   
     margin: 0;
     padding: 0;
 }
 
-/* Стили кнопок навигации */
 .nav-item {
     text-decoration: none;
     font-size: 1rem;
@@ -73,7 +70,6 @@ body.dark-theme {
     transition: color 0.3s ease;
 }
 
-/* Анимация при наведении */
 .nav-item::after {
     content: "";
     position: absolute;
@@ -93,18 +89,16 @@ body.dark-theme {
     color: var(--link-hover-color);
 }
 
-/* Активное состояние */
 .nav-item.active {
     color: var(--button-bg);
 }
 
-/* Кнопка смены темы: фиксирована в правом верхнем углу */
 .theme-toggle {
     position: fixed;
-    /* Фиксируем кнопку */
+    
     top: 1rem;
     right: 1rem;
-    /* Всегда в правом верхнем углу */
+   
     background: var(--button-bg);
     color: var(--button-text);
     border: none;

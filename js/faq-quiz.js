@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', () => {
             const accordionBody = button.nextElementSibling;
 
-            // Переключение видимости текущего элемента
             if (accordionBody.style.display === 'block') {
                 accordionBody.style.display = 'none';
             } else {
@@ -15,13 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Закрыть все вопросы, если пользователь нажимает вне FAQ
     document.addEventListener('click', (event) => {
-        // Проверяем, кликнули ли по заголовку или его содержимому
         const clickedInsideFAQ = event.target.closest('.accordion-header') || event.target.closest('.accordion-body');
 
         if (!clickedInsideFAQ) {
-            // Закрыть все вопросы
             document.querySelectorAll('.accordion-body').forEach(body => (body.style.display = 'none'));
         }
     });
@@ -32,13 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const yesForm = document.getElementById('quiz-yes-form');
     const noForm = document.getElementById('quiz-no-form');
 
-    // Логика переключения форм на основе выбора
     document.querySelectorAll('.quiz-button').forEach(button => {
         button.addEventListener('click', () => {
             const answer = button.getAttribute('data-answer');
-            document.getElementById('step1').style.display = 'none'; // Скрыть первый шаг
+            document.getElementById('step1').style.display = 'none'; г
 
-            // Показать соответствующую форму
             if (answer === 'yes') {
                 yesForm.style.display = 'block';
             } else if (answer === 'no') {
@@ -49,24 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // === EmailJS Logic ===
     const sendEmail = (form) => {
-        const formData = new FormData(form); // Сбор данных из формы
-        const emailData = Object.fromEntries(formData.entries()); // Преобразование данных в объект
+        const formData = new FormData(form);
+        const emailData = Object.fromEntries(formData.entries()); 
 
-        // Обновлённый Template ID
         emailjs
-            .send('service_dw3mcoa', 'template_av879u8', emailData, '1uUg2a4samzyV1xiV') // Новый Template ID и Public Key
+            .send('service_dw3mcoa', 'template_av879u8', emailData, '1uUg2a4samzyV1xiV') 
             .then(() => {
                 alert('Thank you for your feedback!');
-                form.reset(); // Очистить форму
-                form.style.display = 'none'; // Скрыть форму после отправки
+                form.reset(); 
+                form.style.display = 'none'; 
             })
             .catch(error => {
-                console.error('EmailJS Error:', error); // Логирование ошибок
+                console.error('EmailJS Error:', error); 
                 alert('Failed to send feedback. Please try again.');
             });
     };
 
-    // Обработка отправки форм "Yes" и "No"
     if (yesForm) {
         yesForm.addEventListener('submit', (e) => {
             e.preventDefault();
