@@ -21,6 +21,7 @@
     align-items: center;
     font-size: 50px;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .changeWord {
