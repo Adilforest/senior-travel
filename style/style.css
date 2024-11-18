@@ -1,4 +1,4 @@
-/* Общие переменные темы */
+/* ===== Цветовые темы ===== */
 :root {
     --bg-color: #ffffff;
     --text-color: #333333;
@@ -12,7 +12,11 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     transition: background-color 0.3s, color 0.3s;
+    
 }
 
 body.light-theme {
@@ -33,18 +37,17 @@ body.dark-theme {
     --button-text: #f0f0f0;
 }
 
-
-/* Общие стили для навбара */
+/* ===== Навигационный бар ===== */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--bg-color);
-    padding: 1rem 2rem;
-    border-bottom: 2px solid var(--border-color);
-    position: sticky;
+    position: fixed; 
     top: 0;
-    z-index: 1000;
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    background-color: var(--bg-color);
+    border-bottom: 2px solid var(--border-color);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
@@ -104,32 +107,7 @@ body.dark-theme {
     color: var(--button-text);
 }
 
-/* Адаптивный дизайн */
-@media (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
-        background-color: var(--bg-color);
-        border: 1px solid var(--border-color);
-        padding: 1rem;
-        position: absolute;
-        top: 70px; /* Высота навбара */
-        right: 2rem;
-        display: none; /* Скрыто по умолчанию */
-    }
-
-    .nav-links.show {
-        display: flex; /* Показывается при клике на "гамбургер" */
-    }
-
-    .theme-toggle {
-        margin-left: 1rem;
-    }
-}
-
-
-
-/* Стили кнопки "гамбургер" */
+/* ===== Адаптивная кнопка "гамбургер" ===== */
 .menu-toggle {
     display: none;
     background: none;
@@ -139,34 +117,55 @@ body.dark-theme {
     cursor: pointer;
 }
 
-/* Стили для навигационного меню */
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    transition: transform 0.3s ease-in-out;
-}
-
-/* Адаптивный дизайн для мобильных устройств */
 @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* Показываем кнопку "гамбургер" */
+        display: block;
     }
 
     .nav-links {
-        position: absolute;
-        right: 2rem;
-        top: 70px;
         flex-direction: column;
         background-color: var(--bg-color);
         border: 1px solid var(--border-color);
+        position: absolute;
+        top: 70px;
+        right: 2rem;
         padding: 1rem;
-        display: none; /* Скрываем по умолчанию */
+        display: none;
     }
 
     .nav-links.show {
-        display: flex; /* Показываем при нажатии "гамбургера" */
+        display: flex;
     }
+}
+
+/* ===== Футер ===== */
+footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-top: 2px solid var(--border-color);
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+}
+
+footer .social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+    color: var(--link-hover-color);
 }

@@ -13,11 +13,12 @@
     <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/styleForRec.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="container">
                 <a href="index.html" class="logo">Senior Travel</a>
                 <button id="menu-toggle" class="menu-toggle">
@@ -25,7 +26,7 @@
                 </button>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="index2.html" class="active">Luxury Travel</a></li>
+                    <li><a href="index2.html" class="nav-item active">Luxury Travel</a></li>
                     <li><a href="index3.html">Comfort Travel</a></li>
                     <li><a href="index4.html">Budget Travel</a></li>
                     <li><a href="index5.html">Lifehacks</a></li>
@@ -37,49 +38,65 @@
             </div>
         </nav>
     </header>
-    
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero luxury-hero">
         <div class="container">
             <h1>Luxury Travel for Seniors</h1>
-            <p>Explore the finest destinations with comfort, style, and accessibility.</p>
+            <p>Embark on extraordinary adventures with style, comfort, and ease.</p>
+            <a href="#destinations" class="btn">Explore Now</a>
         </div>
     </section>
 
-    <!-- Luxury Travel Content -->
+    <!-- Luxury Destinations -->
     <main>
-        <div class="container">
-            <section class="destinations">
+        <section id="destinations" class="destinations">
+            <div class="container">
                 <h2>Top Luxury Destinations</h2>
                 <div class="grid">
-                    <div class="destination">
-                        <img src="luxury1.jpg" alt="Luxury Destination 1">
-                        <h3>Maldives</h3>
-                        <p>Enjoy pristine beaches and world-class resorts.</p>
+                    <div class="card">
+                        <img src="./style/image/Maldives.jpg" alt="Maldives">
+                        <div class="card-content">
+                            <h3>Maldives</h3>
+                            <p>Discover serene beaches and overwater bungalows with world-class hospitality.</p>
+                            <p class="more-info" style="display: none;">Experience unparalleled luxury with all-inclusive resorts, crystal-clear waters, and vibrant marine life.</p>
+                            <button class="btn-more">More</button>
+                        </div>
                     </div>
-                    <div class="destination">
-                        <img src="luxury2.jpg" alt="Luxury Destination 2">
-                        <h3>Paris, France</h3>
-                        <p>Experience the finest dining and cultural heritage.</p>
+                    <div class="card">
+                        <img src="./style/image/France_place.jpg" alt="Paris, France">
+                        <div class="card-content">
+                            <h3>Paris, France</h3>
+                            <p>Immerse yourself in fine dining, art, and the charm of the Eiffel Tower.</p>
+                            <p class="more-info" style="display: none;">Explore iconic landmarks like Notre-Dame and the Louvre, and enjoy the vibrant Parisian culture.</p>
+                            <button class="btn-more">More</button>
+                        </div>
                     </div>
-                    <div class="destination">
-                        <img src="luxury3.jpg" alt="Luxury Destination 3">
-                        <h3>Venice, Italy</h3>
-                        <p>Discover romance and beauty on the waterways.</p>
+                    <div class="card">
+                        <img src="./style/image/Grand_Canal_Venice.jpg" alt="Venice, Italy">
+                        <div class="card-content">
+                            <h3>Venice, Italy</h3>
+                            <p>Enjoy romantic gondola rides and breathtaking architecture.</p>
+                            <p class="more-info" style="display: none;">Discover St. Mark's Basilica, the Doge's Palace, and enjoy the vibrant atmosphere of Venice's canals.</p>
+                            <button class="btn-more">More</button>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+        
 
-            <section class="luxury-tips">
+        <!-- Travel Tips -->
+        <section class="travel-tips">
+            <div class="container">
                 <h2>Luxury Travel Tips</h2>
                 <ul>
-                    <li><i class="fa fa-check-circle"></i> Book early to secure the best deals.</li>
-                    <li><i class="fa fa-check-circle"></i> Choose resorts with senior-friendly amenities.</li>
-                    <li><i class="fa fa-check-circle"></i> Pack light for easier mobility.</li>
+                    <li><i class="fa fa-check-circle"></i> Book premium flights and accommodations early.</li>
+                    <li><i class="fa fa-check-circle"></i> Choose destinations with accessibility features.</li>
+                    <li><i class="fa fa-check-circle"></i> Pack light, but don't forget the essentials.</li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -94,7 +111,8 @@
         </div>
     </footer>
 
-    <!-- JS для переключения тем -->
+    <!-- JS -->
     <script src="./js/theme-toggle.js"></script>
+    <script src="./js/card-toggle.js"></script>
 </body>
 </html>
