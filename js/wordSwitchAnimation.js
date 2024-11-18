@@ -1,5 +1,6 @@
-const words = ["Hello", "Welcome", "Explore", "Learn", "Enjoy"];
+const words = ["Love", "Entertainment", "Experience", "Friends"];
 const container = document.getElementById("changeWord");
+console.log(container)
 let index = 0;
 
 function replaceWord() {
