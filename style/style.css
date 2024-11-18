@@ -189,6 +189,7 @@ footer .social-links a:hover {
     color: var(--link-hover-color);
 }
 
+<<<<<<< HEAD
 .imageContainer {
     background-image: url(https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/homepage/niagarafallsstatepark-home-2024-crows-nest-stairs-desktop.jpg);
     width: 100vw;
@@ -218,3 +219,5 @@ footer .social-links a:hover {
     opacity: 0;
     transition: opacity 0.5s;
 }
+=======
+>>>>>>> 148effae939d1a923f9152a80f8bfb648a243239

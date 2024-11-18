@@ -15,4 +15,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+});document.addEventListener('DOMContentLoaded', () => {
+    const carouselTrack = document.querySelector('.carousel-track');
+    const leftArrow = document.querySelector('.left-arrow');
+    const rightArrow = document.querySelector('.right-arrow');
+    const scrollStep = 300; // Шаг прокрутки
+
+    // Прокрутка вправо
+    rightArrow.addEventListener('click', () => {
+        carouselTrack.scrollBy({
+            left: scrollStep,
+            behavior: 'smooth',
+        });
+    });
+
+    // Прокрутка влево
+    leftArrow.addEventListener('click', () => {
+        carouselTrack.scrollBy({
+            left: -scrollStep,
+            behavior: 'smooth',
+        });
+    });
 });
