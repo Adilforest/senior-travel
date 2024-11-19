@@ -119,6 +119,7 @@ body.dark-theme {
 
 
 /* ===== Адаптивная кнопка "гамбургер" ===== */
+/* Кнопка "гамбургер" */
 .menu-toggle {
     display: none;
     background: none;
@@ -126,8 +127,10 @@ body.dark-theme {
     font-size: 1.5rem;
     color: var(--text-color);
     cursor: pointer;
+    z-index: 1001;
 }
 
+/* Адаптивный дизайн для навигации */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -139,9 +142,11 @@ body.dark-theme {
         border: 1px solid var(--border-color);
         position: absolute;
         top: 70px;
-        right: 2rem;
+        right: 0;
+        left: 0;
         padding: 1rem;
         display: none;
+        z-index: 1000;
     }
 
     .nav-links.show {
