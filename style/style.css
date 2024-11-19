@@ -97,7 +97,7 @@ body.dark-theme {
 
 /* Активное состояние */
 .nav-item.active {
-    color: var(--button-bg);
+    color: var(--link-color);
 }
 
 /* Кнопка смены темы: фиксирована в правом верхнем углу */
