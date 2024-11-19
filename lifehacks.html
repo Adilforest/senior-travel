@@ -33,9 +33,8 @@
     </header>
 
     <main class="container lifehacks-container">
-        <h1 class="text-center mb-4">Top 10 Travel Lifehacks</h1>
+        <h1 style="text-align: center;">Top 10 Travel Lifehacks</h1>
         <ul class="list-unstyled">
-            <!-- Lifehack 1 -->
             <li class="lifehack-item">
                 <img src="./style/image-lifehacks/packing.webp" alt="Packing Smart">
                 <div class="lifehack-text">
@@ -52,7 +51,6 @@
                 </div>
             </li>
 
-            <!-- More lifehacks -->
             <li class="lifehack-item">
                 <img src="./style/image-lifehacks/carryon.webp" alt="Carry-on Bag">
                 <div class="lifehack-text">
@@ -181,11 +179,78 @@
                     </div>
                 </div>
             </li>
-
-
         </ul>
+
+        <section class="quiz-container">
+            <h2 class="quiz-title">Want to Test Your Travel Knowledge?</h2>
+            <button id="show-quiz-btn" class="quiz-show-btn">Take the Quiz</button>
+
+            <form id="travel-quiz" class="quiz-form hidden">
+                <h2 class="quiz-subtitle">Test Your Travel Knowledge!</h2>
+                <div class="quiz-grid">
+                    <!-- Question 1 -->
+                    <div class="quiz-question">
+                        <p>1. What is the best way to save space in your luggage?</p>
+                        <label><input type="radio" name="q1" value="folding"> Folding clothes</label>
+                        <label><input type="radio" name="q1" value="rolling"> Rolling clothes</label>
+                        <label><input type="radio" name="q1" value="random"> Packing randomly</label>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="quiz-question">
+                        <p>2. Why is it important to carry a reusable water bottle?</p>
+                        <label><input type="radio" name="q2" value="hydration"> To stay hydrated</label>
+                        <label><input type="radio" name="q2" value="save"> To save money</label>
+                        <label><input type="radio" name="q2" value="both"> Both of the above</label>
+                    </div>
+
+                    <!-- Question 3 -->
+                    <div class="quiz-question">
+                        <p>3. What is the benefit of offline maps?</p>
+                        <label><input type="radio" name="q3" value="style"> They look cool</label>
+                        <label><input type="radio" name="q3" value="lost"> Avoid getting lost</label>
+                        <label><input type="radio" name="q3" value="battery"> Save phone battery</label>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="quiz-question">
+                        <p>4. How can you avoid stress while traveling?</p>
+                        <label><input type="radio" name="q4" value="early"> Arrive early</label>
+                        <label><input type="radio" name="q4" value="late"> Arrive just on time</label>
+                        <label><input type="radio" name="q4" value="skip"> Skip planning</label>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="quiz-question">
+                        <p>5. What is the benefit of marking your luggage?</p>
+                        <label><input type="radio" name="q5" value="style"> It looks stylish</label>
+                        <label><input type="radio" name="q5" value="find"> Easy identification</label>
+                        <label><input type="radio" name="q5" value="nothing"> No real benefit</label>
+                    </div>
+                </div>
+                <button type="submit" class="quiz-submit">Submit Quiz</button>
+            </form>
+            <p id="quiz-result" class="quiz-result"></p>
+            <button id="restart-quiz-btn" class="hidden">Restart Quiz</button>
+        </section>
+
+
+
+
+
+
     </main>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Senior Travel.</p>
+            <ul class="social-links">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 
 
     <script src="./js/quiz.js"></script>

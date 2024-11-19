@@ -45,7 +45,7 @@
     color: var(--text-color);
 }
 
-.lifehack-toggle:checked + label + .lifehack-detail {
+.lifehack-toggle:checked+label+.lifehack-detail {
     display: block;
 }
 
@@ -58,4 +58,115 @@ label.btn-link {
 
 label.btn-link:hover {
     text-decoration: underline;
+}
+
+
+
+.quiz-container {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.quiz-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.quiz-show-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-show-btn:hover {
+    background-color: #0056b3;
+}
+
+.quiz-form {
+    display: none;
+    margin-top: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.quiz-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.quiz-question {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-question label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin: 0.5rem 0;
+}
+
+.quiz-submit {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-submit:hover {
+    background-color: #0056b3;
+}
+
+.quiz-result {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#restart-quiz-btn {
+    display: none;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#restart-quiz-btn:hover {
+    background-color: #0056b3;
 }
