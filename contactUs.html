@@ -4,53 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Navbar with Bootstrap</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
+    <style>
+        .navbar {
+            background-color: var(--bg-color, #f8f9fa);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem 2rem;
+            height: 102px; 
+        }
+
+        .nav-link {
+            position: relative;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            color: var(--text-color, #000);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--link-hover-color, #007bff);
+        }
+
+        .nav-link.active {
+            color: var(--button-bg, #007bff);
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 0;
+            background-color: var(--button-bg, #007bff);
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: var(--button-bg, #007bff);
+            color: var(--button-text, #fff);
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: 1.2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .theme-toggle:hover {
+            background-color: var(--link-hover-color, #0056b3);
+            transform: scale(1.1);
+        }
+
+        .navbar-nav {
+            gap: 1.5rem; 
+        }
+
+        @media (max-width: 768px) {
+            .navbar-nav {
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: var(--bg-color, #f8f9fa);
+                border: 1px solid var(--border-color, #ccc);
+                position: absolute;
+                top: 102px; 
+                right: 1rem;
+                padding: 1rem;
+                display: none;
+            }
+
+            .navbar-nav.show {
+                display: flex;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="./home.html"
-                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./favicon_io/android-chrome-512x512.png" alt="our site" height="30" width="30">
-                <span class="fs-4">Senior Travel</span>
-            </a>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto d-flex gap-5">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index2.html" class="nav-link">Luxury Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index3.html" class="nav-link">Comfort Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index4.html" class="nav-link">Budget Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="lifehacks.html" class="nav-link">Lifehacks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactUs.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                
+                
+            </div>
+        </div>
+    </nav>
 
-            <ul class="nav nav-pills">
-                <li class="nav-item"><a href="#" class="nav-link text-danger">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-danger">Budget Travel</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-danger">Comfort Travel</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-danger">Luxury Travel</a></li>
-                <li class="nav-item"><a href="#" class="nav-link text-danger">Lifehacks</a></li>
-                <li class="nav-item"><a href="#" class="nav-link active bg-danger" aria-current="page">Contact Us</a>
-                </li>
-            </ul>
-        </header>
-    </div>
-    <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis"><i class="fa-brands fa-instagram"></i>Centered hero</h1>
-    </div>
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-body-secondary">© 2024 Senior Travel, Inc</p>
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-            <a href="./home.html"
-                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-                <img src="./favicon_io/android-chrome-512x512.png" alt="our site" height="30" width="30">
-            </a>
-
-            <ul class="nav col-md-4 justify-content-end">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Pricing</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">About</a></li>
-            </ul>
-        </footer>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
