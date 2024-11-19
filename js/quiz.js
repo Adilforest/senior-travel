@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const showQuizBtn = document.getElementById('show-quiz-btn');
     const quizForm = document.getElementById('travel-quiz');
