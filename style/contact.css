@@ -9,9 +9,9 @@
 [data-theme="dark"] {
     --bg-color: #333;
     --text-color: #f8f9fa;
-    --button-bg: #ff9800;
-    --button-text: #333;
-    --link-hover-color: #ffc107;
+    --button-bg: #444444;
+    --button-text: #f0f0f0;
+    --link-hover-color: #82caff;
 }
 
 body {
