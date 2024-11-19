@@ -1,0 +1,84 @@
+:root {
+    --bg-color: #f8f9fa;
+    --text-color: #000;
+    --button-bg: #007bff;
+    --button-text: #fff;
+    --link-hover-color: #0056b3;
+}
+
+[data-theme="dark"] {
+    --bg-color: #333;
+    --text-color: #f8f9fa;
+    --button-bg: #ff9800;
+    --button-text: #333;
+    --link-hover-color: #ffc107;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar {
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem 2rem;
+    height: 102px;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--link-hover-color);
+}
+
+.nav-link.active {
+    color: var(--button-bg);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: var(--button-bg);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background-color: var(--link-hover-color);
+    transform: scale(1.1);
+}
