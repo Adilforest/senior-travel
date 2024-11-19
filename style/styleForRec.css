@@ -165,7 +165,7 @@
     font-weight: bold;
     font-size: 1.1rem;
     display: block;
-    color: var(--link-hover-color);
+    color: var(--button-text);
 }
 
 /* ===== Benefits of Luxury Travel ===== */

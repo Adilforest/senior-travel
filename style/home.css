@@ -1,3 +1,31 @@
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+body.light-theme {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --link-color: #0071c2;
+    --link-hover-color: #005fa3;
+    --button-bg: #0071c2;
+    --button-text: #ffffff;
+}
+
+
+body.dark-theme {
+    --bg-color: #2b2b2b;
+    --text-color: #f0f0f0;
+    --link-color: #4dafff;
+    --link-hover-color: #82caff;
+    --button-bg: #444444;
+    --button-text: #f0f0f0;
+}
 .imageContainer {
     background-image: url(https://www.niagarafallsstatepark.com/~/media/parks/niagara-falls/homepage/niagarafallsstatepark-home-2024-crows-nest-stairs-desktop.jpg);
     width: 98.9vw;
@@ -13,10 +41,10 @@
 }
 
 .textContainer {
-    background-color: #0071c2;
+    background-color: var(--bg-color);
     height: 300px;
     width: 600px;
-    color: white;
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +82,7 @@
 
 .card {
     width: 900px;
-    background-color: #fff;
+    background-color: var(--bg-color)   ;
     border-radius: 10px;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
