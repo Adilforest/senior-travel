@@ -15,14 +15,15 @@
 .textContainer {
     background-color: #0071c2;
     height: 300px;
-    width: 800px;
+    width: 600px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 15px;
+    opacity: .7;
 }
 
 .changeWord {
@@ -34,9 +35,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding-left: 150px;
     padding-right: 150px;
     font-size: 20px;
+    margin-top: 40px;
 }
 .card-container {
     display: flex;
