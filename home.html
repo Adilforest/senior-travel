@@ -5,26 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./favicon_io/site.webmanifest">
-    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/005106ea47.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/styleForRec.css">
     <link rel="stylesheet" href="./style/home.css">
     <link rel="stylesheet" href="./style/FAQ-Quiz.css">
-    <!--JavaScript-->
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="container">
-                <!-- Ссылки навигации -->
                 <ul class="nav-links">
                     <li><a href="home.html" class="nav-item">Home</a></li>
                     <li><a href="index2.html" class="nav-item">Luxury Travel</a></li>
@@ -34,7 +29,6 @@
                     <li><a href="contactUs.html" class="nav-item">Contact</a></li>
                 </ul>
 
-                <!-- Кнопка смены темы -->
                 <button id="theme-toggle" class="theme-toggle">
                     <i class="fas fa-moon"></i>
                 </button>
@@ -153,7 +147,6 @@
                 <button class="quiz-button" data-answer="no">No</button>
             </div>
 
-            <!-- Step 2 for "Yes" -->
             <form id="quiz-yes-form" class="quiz-step" style="display: none;">
                 <p>Which section was most helpful?</p>
                 <select name="helpful_section" required>
@@ -175,7 +168,6 @@
                 <button type="submit" class="submit-button">Submit</button>
             </form>
 
-            <!-- Step 2 for "No" -->
             <form id="quiz-no-form" class="quiz-step" style="display: none;">
                 <p>What improvements would you recommend?</p>
                 <select name="improvements" required>
@@ -192,7 +184,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2024 Senior Travel.</p>
@@ -208,7 +199,6 @@
     <script src="./js/faq-quiz.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script>
-        // Инициализация EmailJS с вашим Public Key
         emailjs.init('1uUg2a4samzyV1xiV');
     </script>
 </body>

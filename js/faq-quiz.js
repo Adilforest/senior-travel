@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // === FAQ Accordion Logic ===
+
     const headers = document.querySelectorAll('.accordion-header');
 
     headers.forEach(button => {
@@ -22,7 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // === Quiz Logic ===
     const yesForm = document.getElementById('quiz-yes-form');
     const noForm = document.getElementById('quiz-no-form');
 
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // === EmailJS Logic ===
     const sendEmail = (form) => {
         const formData = new FormData(form);
         const emailData = Object.fromEntries(formData.entries());
