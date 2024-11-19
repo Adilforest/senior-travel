@@ -68,7 +68,7 @@
 }
 
 .card {
-    background: var(--bg-color);
+    background: var(--navbar-color);
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -382,7 +382,7 @@
 .video-section h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--button-bg);
+    color: var(--button-color);
 }
 
 .video-wrapper {
@@ -412,7 +412,7 @@
 .what-to-expect h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--button-bg);
+    color: var(--button-color);
 }
 
 /* Сетка фичей */
@@ -423,7 +423,7 @@
 }
 
 .feature {
-    background: var(--bg-color);
+    background: var(--navbar-color);
     border-radius: 10px;
     overflow: hidden;
     padding: 1.5rem;
@@ -448,7 +448,7 @@
 .feature h3 {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
-    color: var(--button-bg);
+    color: var(--button-color);
 }
 
 .feature p {

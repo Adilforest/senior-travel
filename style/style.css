@@ -21,6 +21,7 @@ body {
 
 body.light-theme {
     --bg-color: #ffffff;
+    --navbar-color: var(--bg-color);
     --text-color: #333333;
     --link-color: #0071c2;
     --link-hover-color: #005fa3;
@@ -30,6 +31,7 @@ body.light-theme {
 
 body.dark-theme {
     --bg-color: #2b2b2b;
+    --navbar-color: #1c1c1c;
     --text-color: #f0f0f0;
     --link-color: #4dafff;
     --link-hover-color: #82caff;
@@ -44,7 +46,7 @@ body.dark-theme {
     /* Центрируем всё содержимое */
     align-items: center;
     padding: 1rem 2rem;
-    background-color: var(--bg-color);
+    background-color: var(--navbar-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
@@ -159,7 +161,7 @@ body.dark-theme {
 
 /* ===== Футер ===== */
 footer {
-    background-color: var(--bg-color);
+    background-color: var(--navbar-color);
     color: var(--text-color);
     text-align: center;
     padding: 1.5rem 1rem;
