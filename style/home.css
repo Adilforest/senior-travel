@@ -176,3 +176,74 @@ body.dark-theme {
         font-size: 0.9em;
     }
 }
+
+/* ====== Overview Section Styles ====== */
+#overview {
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+#overview .alert {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+#overview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#overview p {
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+/* ====== Highlighted Quotes ====== */
+#overview p::first-line {
+    font-size: 1.1rem;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+    #overview {
+        padding: 30px 10px;
+    }
+
+    #overview .alert {
+        padding: 20px;
+    }
+
+    #overview h1 {
+        font-size: 2rem;
+    }
+
+    #overview p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #overview h1 {
+        font-size: 1.8rem;
+    }
+
+    #overview p {
+        font-size: 0.9rem;
+    }
+}
